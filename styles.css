@@ -22,7 +22,19 @@
     font-size: 2em;
     background-color:#304A6E;
     font-size: 3vw;
-
     width: 100%;
     height: 100%;
+}
+
+.tarjN{
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color:#304A6E;
+}
+
+.tarjimg{
+    size: 50%;
 }
