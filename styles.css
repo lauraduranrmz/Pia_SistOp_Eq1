@@ -31,3 +31,51 @@
     font-size: 20px;
     color: #304A6E;
 }
+
+.container80 {
+    padding: 5px;
+    margin: 5px;
+    background-color: #668DC0; /* Aquí define el color de fondo en hexadecimal */
+    color: white; /* Color del texto en blanco */
+    font-size: 40px;
+    font-family: Monospace;
+  }
+  
+  .texthist{
+    text-align: justify;
+    line-height: 3;
+   
+  }
+
+  .container90{
+    padding: 5px;
+    margin: 5px;
+    background-color: #304A6E; /* Aquí define el color de fondo en hexadecimal */
+    color: white; /* Color del texto en blanco */
+    font-size: 30px;
+    font-family: Monospace;
+  }
+
+  .container00{
+    padding: 5px;
+    margin: 5px;
+    background-color: #C0D0EF; /* Aquí define el color de fondo en hexadecimal */
+    color: white; /* Color del texto en blanco */
+    font-size: 30px;
+    font-family: Monospace;
+
+  }
+  .container10{
+    padding: 5px;
+    margin: 5px;
+    background-color: #C2C6CE; /* Aquí define el color de fondo en hexadecimal */
+    color: white; /* Color del texto en blanco */
+    font-size: 30px;
+    font-family: Monospace;
+  }
+
+  .w11{
+    text-align: justify;
+    line-height: 3;
+  }
+
