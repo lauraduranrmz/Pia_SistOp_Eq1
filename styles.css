@@ -82,3 +82,22 @@
 .ligaloc{
   color: white;
 }
+
+/* CARACTERISTICAS */
+.btn-crtcs{
+  width: 100%;
+  background-color: #304A6E;
+  border-radius: 0;
+  font-size: 28px;
+  border: none;
+}
+
+.d-flex{
+  margin: 20px 0;
+}
+
+.img-crtcs{
+  height: 300px;
+  object-fit: cover;
+
+}
