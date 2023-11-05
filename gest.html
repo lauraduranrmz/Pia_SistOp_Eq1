@@ -1,123 +1,389 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sistemsa Operativos</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link href="styles.css" rel="stylesheet">
-</head>
-<body>
-     <!--HEADER-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link href="styles.css" rel="stylesheet" />
+    <style>
+      .image-container {
+        float: left; /* Alinea la imagen a la izquierda del texto */
+        margin-block-end: 20px; /* Agrega espacio a la derecha de la imagen para separarla del texto */
+      }
+    </style>
+  </head>
+  <body>
+    <!--HEADER-->
     <nav class="navbar navbar-expand-lg barra" data-bs-theme="dark">
-    <div class="logo container-fluid">
-      <a class="navbar-brand" href="./index.html"><img src="./windows.svg" alt="Windows" height="30" ></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <div class="logo container-fluid">
+        <a class="navbar-brand" href="./index.html"
+          ><img src="./windows.svg" alt="Windows" height="30"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="justify-content-center collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav">
-          <li class="nav-item col-12 col-lg-auto">
-            <a class="nav-link py-2 px-0 px-lg-2" aria-current="page" href="./windows.html">Windows</a>
-          </li>
-          <li class="nav-item col-12 col-lg-auto">
-            <a class="nav-link nav-link py-2 px-0 px-lg-2" href="./crtcs.html">Caracteristicas</a>
-          </li>
-          <li class="nav-item col-12 col-lg-auto"> 
-            <a class="nav-link active nav-link py-2 px-0 px-lg-2" href="./gest.html">Gestiones</a>
-          </li>
-          <li class="nav-item col-12 col-lg-auto">
-            <a class="nav-link nav-link py-2 px-0 px-lg-2" href="./obj.html">Objetivos</a>
-          </li>
-          <li class="nav-item col-12 col-lg-auto">
-            <a class="nav-link nav-link py-2 px-0 px-lg-2" href="./utl.html">Utilerias</a>
-          </li>
-          <li class="nav-item dropdown col-12 col-lg-auto">
-            <a class="nav-link dropdown-toggle py-2 px-0 px-lg-2" href="./hist.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Historia
-            </a>
-            <ul class="dropdown-menu bajito">
-              <li><a class="dropdown-item" href="./80s.html">Windows en los 80's</a></li>
-              <li><a class="dropdown-item" href="./90s.html">Windows en los 90's</a></li>
-              <li><a class="dropdown-item" href="./00s.html">Windows en los 2000's</a></li>
-              <li><a class="dropdown-item" href="./10s.html">Windows en los 2010's</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="./hist.html">Windows en la Actualidad</a></li>
-            </ul>
-          </li>
-          <li class="nav-item col-12 col-lg-auto">
-            <a class="nav-link nav-link py-2 px-0 px-lg-2" href="./tareas.html">Tareas</a> <!--Tareas-->
-          </li>
-          <li class="nav-item col-12 col-lg-auto">
-            <a class="nav-link nav-link py-2 px-0 px-lg-2" href="./nos.html">Sobre nosotros</a> <!--Boton sobre nosotros-->
-          </li>
-        </ul>
+        <div
+          class="justify-content-center collapse navbar-collapse"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav">
+            <li class="nav-item col-12 col-lg-auto">
+              <a
+                class="nav-link py-2 px-0 px-lg-2"
+                aria-current="page"
+                href="./windows.html"
+                >Windows</a
+              >
+            </li>
+            <li class="nav-item col-12 col-lg-auto">
+              <a class="nav-link nav-link py-2 px-0 px-lg-2" href="./crtcs.html"
+                >Caracteristicas</a
+              >
+            </li>
+            <li class="nav-item col-12 col-lg-auto">
+              <a
+                class="nav-link active nav-link py-2 px-0 px-lg-2"
+                href="./gest.html"
+                >Gestiones</a
+              >
+            </li>
+            <li class="nav-item col-12 col-lg-auto">
+              <a class="nav-link nav-link py-2 px-0 px-lg-2" href="./obj.html"
+                >Objetivos</a
+              >
+            </li>
+            <li class="nav-item col-12 col-lg-auto">
+              <a class="nav-link nav-link py-2 px-0 px-lg-2" href="./utl.html"
+                >Utilerias</a
+              >
+            </li>
+            <li class="nav-item dropdown col-12 col-lg-auto">
+              <a
+                class="nav-link dropdown-toggle py-2 px-0 px-lg-2"
+                href="./hist.html"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Historia
+              </a>
+              <ul class="dropdown-menu bajito">
+                <li>
+                  <a class="dropdown-item" href="./80s.html"
+                    >Windows en los 80's</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./90s.html"
+                    >Windows en los 90's</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./00s.html"
+                    >Windows en los 2000's</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./10s.html"
+                    >Windows en los 2010's</a
+                  >
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./hist.html"
+                    >Windows en la Actualidad</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item col-12 col-lg-auto">
+              <a
+                class="nav-link nav-link py-2 px-0 px-lg-2"
+                href="./tareas.html"
+                >Tareas</a
+              >
+              <!--Tareas-->
+            </li>
+            <li class="nav-item col-12 col-lg-auto">
+              <a class="nav-link nav-link py-2 px-0 px-lg-2" href="./nos.html"
+                >Sobre nosotros</a
+              >
+              <!--Boton sobre nosotros-->
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--BODY -->
+    <!-- TRY OF A NEW TITLE-->
+
+    <div class="p-4 p-md-5 mb-4 text-dark text-align-center rounded bg-white">
+      <div class="row">
+        <div class="col-md-6">
+          <h1 class="display-4 fw-bold" style="text-align:center">FUNCIONES <br> Y <br> GESTIONES</h1>
+          <p class="fant text-dark">
+            Como se mencionó anteriormente, Windows es el sistema operativo
+            desarrollado por Microsoft, el cual tiene como función principal ser
+            un mediador entre el usuario y la máquina, facilitando la conexión
+            entre ambos. Actualmente, el más reciente es el "Windows 11" y este
+            está basado en Windows 10, lo más reciente que ha traído este
+            Windows es que nos proporciona una interfaz de usuario nueva y una
+            experiencia de usuario optimizada.
+          </p>
+          <p class="cursive text-dark">
+            <a href="#" class="text-dark fw-bold"
+              >A continuacion se mostraran las funciones de Windows ...</a
+            >
+          </p>
+        </div>
+        <div class="col-md-6">
+          <a href="../windowsWeb-main/index.html" title="What is Windows?">
+            <br><br>
+            <img
+            src="https://i.blogs.es/852403/win10/1366_2000.jpg"
+            alt="More about Windows"
+            width="100%"
+            height="auto"
+          />
+
+        </a>
+
+        </div>
       </div>
     </div>
-  </nav>
 
- <!--BODY-->
-<div class="px-4 py-5 my-5 text-center">
-    <img class="d-block mx-auto mb-4" src="https://i.blogs.es/852403/win10/1366_2000.jpg" alt="" width="700" height="400">
-    <h1 class="display-5 fw-bold text-body-emphasis"> FUNCIONES Y GESTIONES </h1>
-    <div class="col-lg-6 mx-auto">
-      <p class="lead mb-4">Como se mencionó anteriormente windows es el sistema operativo desarrollado por Microsoft el cual tiene como función principal ser un mediador entre el usuario y la máquina, facilitando la conexión entre ambos. Actualmente el más reciente es el “Windows 11” y este esta basado en Windows 10 
-        lo más reciente que ha traído este Windows es que nos proporciona una interfaz de usuario nueva y una experiencia de usuario optimizada.</p>
-  </div>
-
+    <!-- DIVS-->
     <div class="row mb-2">
       <div class="col-md-6">
-        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div
+          class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+        >
           <div class="col p-4 d-flex flex-column position-static">
-            <strong class="d-inline-block mb-2 text-primary">World</strong>
-            <h3 class="mb-0">Featured post</h3>
-            <div class="mb-1 text-muted">Nov 12</div>
-            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="stretched-link">Continue reading</a>
+            <strong class="d-inline-block mb-2 text-primary">FUNCION 1</strong>
+            <h3 class="mb-0">Manejo de los recursos de la computadora</h3>
+            <br />
+            <p class="card-text mb-auto">
+              Es la función primaria del sistema operativo de Windows ya que
+              maneja y organiza los recursos de la computadora los cuales llegan
+              a ser el CPU, RAM y el disco duro.El Administrador de recursos del sistema de Windows solo administra los recursos del procesador cuando la carga combinada del procesador es superior al 70 por ciento
+              esto significa que no limita activamente los recursos que se pueden utilizar. 
+            </p>
+            <a
+              href="https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh997019(v=ws.11)"
+              class="stretched-link"
+              >How to manage the resources</a
+            >
           </div>
-          <div class="col-auto d-none d-lg-block">
-            <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-  
-          </div>
+          <div class="col-auto d-none d-lg-block"></div>
         </div>
       </div>
       <div class="col-md-6">
-        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div
+          class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+        >
           <div class="col p-4 d-flex flex-column position-static">
-            <strong class="d-inline-block mb-2 text-success">Design</strong>
-            <h3 class="mb-0">Post title</h3>
-            <div class="mb-1 text-muted">Nov 11</div>
-            <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="stretched-link">Continue reading</a>
+            <strong class="d-inline-block mb-2 text-success">FUNCION 2</strong>
+            <h3 class="mb-0">Provee una interfaz</h3>
+            <br /><br />
+            <p class="mb-auto">
+              Windows ofrece una GUI que nos permite acceder y utilizar varias
+              aplicaciones y programas de una manera sencilla ya que esto
+              permite a los usuarios seleccionar menús, hacer clic en iconos y
+              navegar fácilmente por varias aplicaciones.
+            </p>
+            <a
+              href="https://learn.microsoft.com/es-es/windows/win32/msi/about-the-user-interface"
+              class="stretched-link"
+            >
+              GUI Windows Information</a
+            >
           </div>
-          <div class="col-auto d-none d-lg-block">
-            <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-  
-          </div>
+          <div class="col-auto d-none d-lg-block"></div>
         </div>
       </div>
     </div>
-  <!--FOOTER-->
-  <div class="container">
-    <footer class="py-3 my-4">
-      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-        <li class="nav-item"><a href="./windows.html" class="nav-link px-2 text-body-secondary">Windows</a></li>
-        <li class="nav-item"><a href="./crtcs.html" class="nav-link px-2 text-body-secondary">Caracteristicas</a></li>
-        <li class="nav-item"><a href="./gest.html" class="nav-link px-2 text-body-secondary">Gestiones</a></li>
-        <li class="nav-item"><a href="./obj.html" class="nav-link px-2 text-body-secondary">Objetivos</a></li>
-        <li class="nav-item"><a href="./utl.html" class="nav-link px-2 text-body-secondary">Utilerias</a></li>
-        <li class="nav-item"><a href="./hist.html" class="nav-link px-2 text-body-secondary">Historia</a></li>
-        <li class="nav-item"><a href="./tareas.html" class="nav-link px-2 text-body-secondary">Tareas</a></li>
-        <li class="nav-item"><a href="./nos.html" class="nav-link px-2 text-body-secondary">Sobre nosotros</a></li>
-      </ul>
-      <p class="text-center text-body-secondary">© 2023 Equipo 1, Sistemas Operativos</p>
-    </footer>
-  </div>
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div
+          class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+        >
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success">FUNCION 3</strong>
+            <h3 class="mb-0">Gestion de Archivos</h3>
+            <br /><br />
+            <p class="mb-auto">
+              Windows nos facilita la gestión de archivos así como el data
+              storage, la configuración de derechos de acceso y la búsqueda de
+              archivos ya que Windows proporciona varias herramientas para
+              ayudar a los usuarios a organizar y almacenar datos y archivos en
+              sus computadoras o portátiles todo esto gracias a el El Shell de
+              Windows 2000 permite asociar archivos con un usuario en
+              particular, de modo que los archivos permanezcan ocultos para
+              otros usuarios.
+            </p>
+            <a
+              href="https://www.pcmag.com/how-to/10-tips-how-to-manage-your-files-with-windows-10s-file-explorer"
+              class="stretched-link"
+              >Tricks for Managing Your Files</a
+            >
+          </div>
+          <div class="col-auto d-none d-lg-block"></div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div
+          class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+        >
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success">FUNCION 4</strong>
+            <h3 class="mb-0">Facilitar la configuración de la Red</h3>
+            <br /><br />
+            <p class="mb-auto">
+              Este sistema provee varias herramientas para facilitar la conexión
+              como la network configuration, firewall configuration y el network
+              access configuration lo que hace posible que el usuario pueda
+              conectarse a redes y compartir información con otros dispositivos
+              que están en la misma red de manera más fácil ya que Windows tiene
+              APIs, componentes, y servicios que dan mantenimiento a nuestras
+              apps usando las redes y el internet.
+            </p>
+            <a
+              href="https://learn.microsoft.com/en-us/windows/win32/networking"
+              class="stretched-link"
+            >
+              Windows Network</a
+            >
+          </div>
+          <div class="col-auto d-none d-lg-block"></div>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div
+          class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+        >
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">FUNCION 5</strong>
+            <h3 class="mb-0">Facilita la Seguridad</h3>
+            <br />
+            <p class="card-text mb-auto">
+              Este sistema operativo provee varias funciones de seguridad así
+              como los antivirus, antimalwares y firewalls que ayudan a proteger
+              nuestro dispositivo de ataques de los virus y malwares debido a
+              que este siempre a sido su objetivo, pero el windows actual nos
+              ayuda a proteger nuestra identidad al usar métodos avanzados de
+              seguridad para iniciar sesión en tu dispositivo.
+            </p>
+            <a
+              href="https://www.microsoft.com/es-mx/windows/comprehensive-security"
+              class="stretched-link"
+              >Windows Security Information</a
+            >
+          </div>
+          <div class="col-auto d-none d-lg-block"></div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div
+          class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+        >
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">FUNCION 6 </strong>
+            <h3 class="mb-0">Proporciona Compatibilidad</h3>
+            <br />
+            <p class="card-text mb-auto">
+              Este sistema está diseñado para aceptar varios depósitos de
+              hardware y softwares, haciendo que de manera más sencilla los
+              usuarios puedan instalar y utilizar diferentes aplicaciones y
+              programas en el dispositivo pero con el paso de los tiempos aun se
+              espera que la compatibilidad con aplicaciones de escritorio
+              (Win32) sea segura, con la mayoría de las aplicaciones existentes
+              trabajando sin cambios.
+            </p>
+            <a
+              href="https://learn.microsoft.com/es-es/windows/deployment/planning/windows-10-compatibility"
+              class="stretched-link"
+              >Windows Compatibilidad Information</a
+            >
+          </div>
+          <div class="col-auto d-none d-lg-block"></div>
+        </div>
+      </div>
+    </div>
+    <!--FOOTER-->
+    <div class="container">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item">
+            <a href="./windows.html" class="nav-link px-2 text-body-secondary"
+              >Windows</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="./crtcs.html" class="nav-link px-2 text-body-secondary"
+              >Caracteristicas</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="./gest.html" class="nav-link px-2 text-body-secondary"
+              >Gestiones</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="./obj.html" class="nav-link px-2 text-body-secondary"
+              >Objetivos</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="./utl.html" class="nav-link px-2 text-body-secondary"
+              >Utilerias</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="./hist.html" class="nav-link px-2 text-body-secondary"
+              >Historia</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="./tareas.html" class="nav-link px-2 text-body-secondary"
+              >Tareas</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="./nos.html" class="nav-link px-2 text-body-secondary"
+              >Sobre nosotros</a
+            >
+          </li>
+        </ul>
+        <p class="text-center text-body-secondary">
+          © 2023 Equipo 1, Sistemas Operativos
+        </p>
+      </footer>
+    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
