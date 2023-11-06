@@ -104,3 +104,14 @@
   color: white;
   background-color: #304A6E;
 }
+
+.imgw{
+  height: 20px;
+  width: 20px;
+}
+
+.num{
+  margin-left: 10px;
+  align-items: center; /* Centra verticalmente */
+  gap: 20px; 
+}
